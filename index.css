@@ -152,7 +152,7 @@ header {
   cursor: pointer;
 }
 
-.color-codes-section > *:hover {
+.color-codes-section div:hover {
   background-color: #3d4b60;
 }
 
