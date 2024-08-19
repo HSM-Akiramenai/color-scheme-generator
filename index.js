@@ -1,18 +1,18 @@
 const colorPickerEl = document.getElementById("color-picker-input");
-const getColorSchemeBtn = document.getElementById("get-colorScheme-btn");
 const selectSchemeEl = document.getElementById("select-scheme-el");
 
 document.addEventListener("click", (e) => {
   if (e.target.hasAttribute("data-color")) {
     const color = e.target.getAttribute("data-color");
     navigator.clipboard.writeText(color).then(() => {
-      console.log(`Copied ${color} to clipboard!`);
       alert(`Copied ${color} to clipboard!`);
     });
+  } else if (e.target.id == "get-colorScheme-btn") {
+    getColorScheme();
   }
 });
 
-getColorSchemeBtn.addEventListener("click", () => {
+function getColorScheme() {
   const loader = document.getElementById("loader");
   const overlay = document.getElementById("overlay");
   const color = colorPickerEl.value.replace(/^#/, "");
@@ -33,7 +33,9 @@ getColorSchemeBtn.addEventListener("click", () => {
       generateColorContainers(count);
       renderColors(colors);
     });
-});
+}
+
+getColorSchemeBtn.addEventListener("click", () => {});
 
 function generateColorContainers(count) {
   let paletteHtmlString = "";
