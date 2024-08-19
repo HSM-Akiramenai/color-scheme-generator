@@ -1,45 +1,51 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <!-- FONT AWESOME -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <!-- INTER FONT -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header class="header content">
-            <input
-                class="color-picker"
-                type="color"
-                id="color-picker-input"
-            >
-            <div class="select-wrapper">
-                <select class="select-scheme" id="select-scheme-el">
-                    <option value="monochrome">Monochrome</option>
-                    <option value="monochrome-dark">Monochrome Dark</option>
-                    <option value="monochrome-light">Monochrome Light</option>
-                    <option value="analogic">Analogic</option>
-                    <option value="complement">Complement</option>
-                    <option value="analogic-complement">Analogic Complement</option>
-                    <option value="triad">Triad</option>
-                    <option value="quad">Quad</option>
-                </select>
-                <div class="chevron-down-div"><i class="fa-solid fa-chevron-down"></i></div>
-            </div>
-            <button class="colorScheme-btn" id="get-colorScheme-btn">Get color scheme</button> 
-        </header>
-        <main class="main content">
-            <!-- COLOR SWATCHES GO HERE -->
-            <div class="color-scheme-palette" id="color-scheme-palette">                                         
-            </div>
-        </main>
-        <section class="color-codes-section content" id="color-scheme-codes">
-            <!-- COLOR CODES GO HERE -->
-        </section>
-        <div id="overlay" class="overlay hidden"></div>
-        <div id="loader" class="loader hidden"></div>
-        <script src="index.js"></script>
-    </body>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- INTER FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header content">
+      <input class="color-picker" type="color" id="color-picker-input" />
+      <div class="select-wrapper">
+        <select class="select-scheme" id="select-scheme-el">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome Dark</option>
+          <option value="monochrome-light">Monochrome Light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic Complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <div class="chevron-down-div">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+      <button class="colorScheme-btn" id="get-colorScheme-btn">
+        Get color scheme
+      </button>
+    </header>
+    <main class="main content">
+      <div class="color-scheme-palette" id="color-scheme-palette">
+        <!-- COLOR SWATCHES GO HERE -->
+      </div>
+    </main>
+    <section class="color-codes-section content" id="color-scheme-codes">
+      <!-- COLOR CODES GO HERE -->
+    </section>
+    <div id="overlay" class="overlay hidden"></div>
+    <div id="loader" class="loader hidden"></div>
+    <script src="index.js"></script>
+  </body>
 </html>
